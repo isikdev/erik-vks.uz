@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+$dark_grey: #363A45
+$light_grey: #F7F7F7
+$medium__grey: #EFEFEF
+$green: #00C65E
+$orange: #FFB762
+$gold: #FFD700
+$green__linear: linear-gradient(86.74deg, #CCEFDB -2.68%, rgba(255, 255, 255, 0.26) 55.27%, rgba(0, 198, 94, 0.21) 105.35%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', serif
+    transition: .3s
+    min-height: 0
+    min-width: 0
+.slick-track
+    transition: none
+body,html
+    scroll-behavior: smooth
+    text-rendering: optimizeSpeed
+.container-fluid
+    max-width: 100%
+    width: 100%
+    padding: 0px 0px
+    margin: 0 auto
+.container
+    max-width: 1440px
+    width: 100%
+    padding: 0px 40px
+    margin: 0px auto
+h1,
+h2,
+h3
+    font-size: 48px
+h4
+    font-size: 34px
+section
+    margin: 80px 0px
+    &:nth-child(1)
+        margin: 0px 0px
+.btn__primary
+    padding: 13px 25px
+    border-radius: 10px
+    max-width: 100%
+    color: #fff
+    background-color: $green
+    border: 0px none
+    cursor: pointer
+    text-align: center
+.navbar
+    border-top: 4px solid $green
+    padding: 10px 0px
+    .nav__content
+        .nav__head
+            display: flex
+            justify-content: space-between
+            a
+                color: $dark_grey
+                text-decoration: none
+                font-weight: 500
+            .head__link
+                display: flex
+                align-items: center
+                align-self: center
+                ul
+                    display: flex
+                    align-items: center
+                    align-self: center
+                    li
+                        list-style: none
+                        margin-left: 43px
+                        img
+                            margin-right: 10px
+                            width: 17px
+                            height: 17px
+                        .reg
+                            font-weight: 600
+                    .shop
+                        padding: 23px 10px
+                        background-color: $green
+                        a
+                            font-weight: 600
+                            color: #000
+    .nav__body
+        background-color: $light_grey
+        padding: 14px 0px
+        border-top: 2px solid #DADCDC
+        border-bottom: 2px solid #DADCDC
+        .nav__links
+            display: flex
+            justify-content: space-between
+            .body__service
+                display: flex
+                justify-content: space-between
+                align-items: center
+                align-self: center
+                a
+                    text-decoration: none
+                    color: $dark_grey
+                    margin-right: 17px
+                    font-weight: 600
+                form
+                    margin-right: 17px
+                    input
+                        min-width: 200px
+                        padding: 9px 12px
+                        border-top-left-radius: 12px
+                        border-bottom-left-radius: 12px
+                        outline: none
+                        border: 0px none
+                    button
+                        border-top-right-radius: 12px
+                        border-bottom-right-radius: 12px
+                        padding: 9px 12px
+                        outline: none
+                        border: 0px none
+                        background-color: #DADCDC
+                .eshop__carts
+                    .support
+                        margin-left: 31px
+                        font-weight: 600
+            .delivery
+                a
+                    color: $green
+                    img
+                        margin-right: 15px
+.stock__banner
+    background-image: url("../images/banner.svg")
+    min-height: 390px
+    padding: 60px 80px
+    h1
+        color: $orange
+        margin-bottom: 50px
+        span
+            padding: 50px 70px
+    a
+        text-decoration: none
+.xits
+    .xits__content
+        .xits__intro
+            display: flex
+            justify-content: space-between
+            align-items: center
+            h1
+                text-align: left
+            a
+                text-decoration: none
+        .xits__cards
+            margin: 50px 0px
+            width: 100%
+            // display: flex
+            // justify-content: space-between
+            .xit__card
+                max-width: 230px
+                min-width: 230px
+                box-shadow: 1px 2px 16px 3px #363A4514
+                padding: 5px 23px
+                border-radius: 10px
+                position: relative
+                margin: 20px 30px
+                img
+                    max-width: 130px
+                    margin: 0px auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                .type
+                    color: #898989
+                .title
+                    font-size: 14px
+                    margin: 12px 0px
+                .old__price
+                    text-decoration: line-through
+                    font-size: 13px
+                    color: $dark_grey
+                    font-weight: 600
+                .price
+                    color: $green
+                    margin: 14px 0px
+                    font-weight: 700
+                    display: flex
+                    justify-content: space-between
+                    align-self: center
+                    align-items: center
+                    .stars__reyting
+                        display: flex
+                        align-self: center
+                        align-items: center
+                        p
+                            color: $gold
+                            margin-right: 3px
+                        svg
+                            path
+                                fill: $gold
+                .like
+                    position: absolute
+                    top: 15px
+                    right: 14px
+                    cursor: pointer
+                    background: none
+                    padding: 0px 0px
+                    min-width: 0%
+                    &:hover
+                        svg
+                            fill: $green
+                            path
+                                fill: $green
+                    &:active
+                        svg
+                            path
+                                fill: red
+
+                button
+                    margin: 17px 0px
+                    padding: 13px 25px
+                    border-radius: 10px
+                    min-width: 100%
+                    color: #000
+                    background-color: #fff
+                    border: 0px none
+                    cursor: pointer
+                    text-align: center
+                    box-shadow: 1px 2px 16px 3px rgba(54,58,69,0.15)
+                    display: flex
+                    align-items: center
+                    align-self: center
+                    justify-content: center
+                    svg
+                        margin-left: 6px
+                    &:hover
+                        background-color: $green
+                        color: #fff
+                        svg
+                            fill: #fff
+                            path
+                                fill: #fff
+.info__cashback
+    .cashback
+        display: flex
+        justify-content: space-between
+.banners
+    margin-left: 0px
+    .banner__slide
+        margin: 20px auto
+        // box-shadow: 0px 0px 50px -10px rgba(0,198,94,0.75)
+        border-radius: 20px
+        h1
+            color: $green
+            font-weight: 600
+        h4
+            font-weight: 500
+            margin: 10px 0px
+        button
+            margin-top: 20px
+            padding: 13px 45px
+            &:hover
+                opacity: .5
+.brands
+    .brand__content
+        .brand__column
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            margin: 30px auto
+            .brand__img
+                box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.22)
+                padding: 15px 15px
+                border-radius: 5px
+                max-height: 80px
+                max-width: 175px
+                height: 100%
+                width: 100%
+                display: flex
+                img
+                    max-width: 100%
+                    width: 100%
+                    margin: 0px auto
+                    align-items: center
+                    align-self: center
+.benefits
+    .benefit__content
+        .benefit__column
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+            .benefit__card
+                padding: 12px 8px
+                border-radius: 12px
+                box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.22)
+                margin-left: 14px
+                display: flex
+                flex-direction: column
+                p
+                    font-weight: 600
+                    text-align: center
+                    margin: 15px 0px
+                img
+                    max-width: 120px
+                    max-height: 120px
+                    width: 100%
+                    height: 100%
+                    margin: 20px auto
+                &:nth-child(1)
+                    margin-left: 0px
+.maining
+    background: $green__linear
+    padding: 50px 0px
+    .maining__column
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        align-self: center
+        .maining__block
+            h1
+                font-weight: 500
+            p
+                max-width: 324px
+            .maining__form
+                form
+                    display: flex
+                    input
+                        padding: 12px 15px
+                        outline: 2px solid #DADCDC
+                        min-width: 300px
+                        border: 0px none
+                        border-radius: 10px
+                    button
+                        margin-left: 30px
+footer
+    background-color: $medium__grey
+    padding: 50px 0px
+    hr
+        border: 1px solid #DADCDC
+        margin: 30px 0px
+    .footer__intro
+        display: flex
+        justify-content: space-between
+        .footer__brand
+            display: flex
+            justify-content: space-between
+            align-items: center
+            align-self: center
+            .head__link
+                margin-left: 40px
+                ul
+                    display: flex
+                    li
+                        list-style: none
+                        a
+                            text-decoration: none
+                            color: $green
+                            font-size: 18px
+                            img
+                                margin-right: 10px
+        .footer__social
+            display: flex
+            justify-content: space-between
+            align-items: center
+            align-self: center
+            p
+                font-weight: 500
+            .social__ico
+                margin-left: 20px
+                a
+                    cursor: pointer
+                    margin-left: 20px
+                    img
+                        width: 50px
+                        height: 50px
+                        &:hover
+                            opacity: .4
+    .footer__links
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-top: 30px
+        .footer__link-block
+            margin-left: 35px
+            p
+                font-weight: 600
+                font-size: 18px
+            ul
+                margin-top: 8px
+                li
+                    list-style: none
+                    margin: 12px 0px
+                    a
+                        text-decoration: none
+                        color: #363A45
+                        &:hover
+                            border-bottom: 2px solid $dark_grey
+                            padding-bottom: 2px
+            &:nth-child(1)
+                margin-left: 0px
+@media screen and (max-width: 1240px)
+    .container
+        max-width: 1240px
+        width: 100%
+        padding: 0px 10px
+        margin: 0 auto
+@media screen and (max-width: 920px)
+    .container
+        max-width: 920px
+        width: 100%
+        padding: 0px 10px
+        margin: 0 auto
+    h1,h2,h3
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 920))
